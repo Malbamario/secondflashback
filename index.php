@@ -118,4 +118,89 @@ echo "<br>";
     echo "<br>";
     $logic8 = !$logic6;
     var_dump($logic8);
+
+echo "<br><br>";
+
+// Control Flow
+
+    //Pengulangan
+
+        //while
+        $i = 0;
+        echo "while<br>";
+        while ($i < 10) {
+            echo "Hello World ke $i<br>";
+            $i++;
+        }
+
+        //do.. while
+        echo "do.. while<br>";
+        do{
+            echo "Hello World ke $i<br>";
+            $i++;
+            if($i > 10){
+                echo "\$i = $i<br>";
+                $i = 0;
+                echo "\$i = $i<br>";
+            }
+        }while ($i < 10);
+        echo "\$i = $i<br>";
+
+        //for
+        echo "for<br>";
+        for($i=0;$i<10;$i++){
+            echo "Hello World ke $i<br>";
+        }
+
+        //foreach (untuk array) - nanti diisi kalau sudah masuk part array
+
+
+    echo "<br>";
+
+    //Pengkondisian
+    $mood1 = 0;
+    $mood2 = 1;
+    $mood3 = 2;
+    $mood4 = 3;
+
+        //if  else
+        if($mood1 == 0){
+            echo "mood1 => Saya g guna<br>";
+        }else{
+            echo "mood1 => Saya bisa survive kok<br>";
+        }
+
+        //if  else if  else
+        if($mood2 == 0){
+            echo "mood2 => Saya kok saya gini sih<br>";
+        }else if ($mood2 == 1){
+            echo "mood2 => Saya mungkin salah<br>";
+        }else{
+            echo "mood2 => Saya bisa survive kok";
+        }
+
+        //ternary - ada di JS
+        
+
+        //switch
+        switch ($mood4) {
+            case 0:
+                echo "mood4 => I'm so Fucked up";
+                break;
+            case 1:
+                echo "mood4 => Saya kok gitu sih";
+                break;
+            case 2:
+                echo "mood4 => Saya masih layak kok";
+                break;
+            case 3:
+                echo "mood4 => ahh, ini mah pasti bisa but tetep teliti dan jaga\" aja";
+                break;
+            default:
+                echo "mood4 => mood macam apa ini?!";
+                break;
+        }
+    
     echo "<br><br>";
+
+//
